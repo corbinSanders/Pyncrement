@@ -3,7 +3,7 @@ Pynput script to increment a text file number
 
 # Prerequisites
 - Install Python3
-- Install pynput (pip3 install pynput)
+- Install pip3
 
 # Config
 
