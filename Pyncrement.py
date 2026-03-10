@@ -36,6 +36,7 @@ class IncFile:
 		self.incOrDec('D')
 
 def exit():
+	print("Goodbye!")
 	raise keyboard.Listener.StopException
 
 
@@ -50,6 +51,9 @@ def main():
 	exit_keystroke = config["SCRIPT"]["exit_keystroke"]
 
 	incFile = IncFile(increment_file)
+
+	print("Ready and waiting!!!")
+	print("To exit use "+exit_keystroke)
 
 	with keyboard.GlobalHotKeys({
 		increment_keystroke: incFile.inc,
